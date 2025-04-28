@@ -1,0 +1,170 @@
+[
+    {
+      "id": 1,
+      "name": "Cerveza Poker",
+      "description": "Six-Pack de cerveza poker",
+      "price": 19.800,
+      "image": "../data/img/Six_Pack_Poker.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cerveza Aguila",
+      "description": "Six-Pack de cerveza Aguila",
+      "price": 14.760,
+      "image": "../data/img/Six_Pack_AGUILA.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Cerveza Corona",
+      "description": "Six-Pack de cerveza Corona",
+      "price": 24.220,
+      "image": "../data/img/Six_Pack_CORONA.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Cerveza Club Colombia",
+      "description": "Six-Pack de cerveza Club Colombia",
+      "price": 19.860,
+      "image": "../data/img/Six_Pack_CLUB.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cerveza Heineken",
+      "description": "Barril de cerveza Heineken (5000 ml)",
+      "price": 90.000,
+      "image": "../data/img/barrii_Heineken.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "1800",
+      "description": "Tequila 1800 (750ml)",
+      "price": 253.700,
+      "image": "../data/img/1800.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "ABSOLUT",
+      "description": "VODKA ABSOLUT (700ml)",
+      "price": 87.900,
+      "image": "../data/img/ABSOLUT_VODKA.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "Aguardiente",
+      "description": "Aguardiente Blanco del Valle (750ml)",
+      "price": 65.500,
+      "image": "../data/img/Aguardiente_Blanco.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "BACARDI",
+      "description": "Vodka BACARDI (750ml)",
+      "price": 55.900,
+      "image": "../data/img/BACARDI.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Black and White",
+      "description": "Whisky Black and White (1000ml)",
+      "price": 70.000,
+      "image": "../data/img/Black_and_White.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "Buchanans",
+      "description": "Whisky BUCHANANS (750ml)",
+      "price": 165.000,
+      "image": "../data/img/Buchanasns.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "El Jimador",
+      "description": "Tequila Jimador (700ml)",
+      "price": 113.900,
+      "image": "../data/img/El_Jimador.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "FOUR LOKO",
+      "description": "FOUR LOKO GOLD (473ml)",
+      "price": 19.000,
+      "image": "../data/img/FOUR-LOKO-GOLD.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "FOUR LOKO",
+      "description": "FOUR LOKO SANDIA (473ml)",
+      "price": 19.000,
+      "image": "../data/img/FOUR-LOKO-SANDIA.jpg"
+    },
+    {
+      "id": 15,
+      "name": "jACK Daniel's",
+      "description": "Whisky Jack Daniel's (700ml)",
+      "price": 119.900,
+      "image": "../data/img/Jack_Daniels.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Jägermeister",
+      "description": "Whisky Jägermeister (700ml)",
+      "price": 140.990,
+      "image": "../data/img/jager.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Johnnie Walker",
+      "description": "Whisky Johnnie Walker red (1000ml)",
+      "price": 94.000,
+      "image": "../data/img/Johnnie_Walker_Red.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Johnnie Walker",
+      "description": "Whisky Johnnie Walker black (1000ml)",
+      "price": 187.000,
+      "image": "../data/img/Johnnie_Walker_Black.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "JP.CHENET",
+      "description": "Champagne JP.CHENET (750ml)",
+      "price": 49.900,
+      "image": "../data/img/JP,CHENET.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "LIKE",
+      "description": "Like Ice Cooler (300ml)",
+      "price": 3.500,
+      "image": "../data/img/LIKE.jpeg"
+    },
+    {
+      "id": 21,
+      "name": "OLMECA",
+      "description": "Tequila OLMECA (700ml)",
+      "price": 85.900,
+      "image": "../data/img/OLMECA.jpeg"
+    },
+    {
+      "id": 22,
+      "name": "PATRON",
+      "description": "Tequila El Patron (700ml)",
+      "price": 299.400,
+      "image": "../data/img/PATRON.jpeg"
+    },
+    {
+      "id": 23,
+      "name": "RON ",
+      "description": "RON VIEJO DE CALDAS (750ml)",
+      "price": 57.100,
+      "image": "../data/img/Ron_Viejo_de_Caldas.jpg"
+    },
+    {
+      "id": 24,
+      "name": "SMIRNOFF",
+      "description": "Vodka SMIRNOFF (275ml)",
+      "price": 8.000,
+      "image": "../data/img/SMIRNOFF.jpeg"
+    }
+  ]
