@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <title>Crear Artículo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="navbar">
+        <h2 class="logo">Tipsy</h2>
+        <a href="index.html" class="back-btn">Regresar</a>
+    </div>
+    <div class="crear-article-container">
+        <h2>Crear Artículo</h2>
+        <form id="newProductForm" action="#" method="POST">
+            <div class="form-content">
+                <div class="image-preview-container">
+                    <img id="imagePreview" src="#" alt="Vista previa de la imagen" style="display:none;" />
+                </div>
+                <div class="form-fields">
+                    <label for="articleNombre">Nombre del Artículo:</label>
+                    <input type="text" id="articleNombre" name="articleNombre" placeholder="Introduce el título del artículo" required />
+                    <label for="articleDescripcion">Descripción:</label>
+                    <textarea id="articleDescripcion" name="articleDescripcion" placeholder="Introduce la descripción" required></textarea>
+                    <label for="articlePrice">Precio:</label>
+                    <input type="number" id="articlePrice" name="articlePrice" placeholder="Introduce el precio" step="0.01" required />
+                    <label for="articleCantidad">Cantidad:</label>
+                    <input type="number" id="articleCantidad" name="articleCantidad" placeholder="Introduce las cantidades" required />
+                    <label for="articleImagen">Imagen del Artículo:</label>
+                    <input type="file" id="articleImagen" name="articleImagen" accept="image/*" required />
+                </div>
+            </div>
+            <input type="submit" class="btn" value="Crear Articulo"/>
+        </form>
+    </div>
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <p>¿Estás seguro de que deseas guardar los cambios?</p>
+            <button id="confirmSave" class="btn">Sí</button>
+            <button id="cancelSave" class="btn">Cancelar</button>
+        </div>
+    </div>
+</div>
+<script src="js/newProduct.js"></script>
+</body>
+</html>

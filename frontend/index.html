@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cartStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="main">
+    <header>
+        <div class="navbar">
+            <div class="menu-icon">
+                <span class="hamburger">&#9776;</span>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <h2>Perfil</h2>
+                <div class="profile-section">
+                    <img src="../data/img/user-icon.png" alt="Perfil" class="profile-image">
+                    <p id="username" class="username">No data found</p><br>
+                    <p id="email" class="email">correo</p><br>
+                    <br><br>
+                </div>
+                <button id="logoutBtn2" class="logout-btn">Cerrar sesion</button>
+            </div>
+            <div class="icon">
+                <h2 class="logo">Tipsy</h2>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="srch" placeholder="¿QUE BUSCAS HOY?">
+                <a>
+                    <button class="btn">Search</button>
+                </a>
+            </div>
+            <div id="profileCart" class="profile-cart" style="display: none;">
+                <div class="cart-icon" onclick="toggleCart()">
+                    <img src="../data/img/carrito-de-compras.png" alt="Carrito" class="icon-image">
+                </div>
+                <div class="history-icon" onclick="toggleHistory()">
+                    <img src="../data/img/Historial.png" alt="Historial" class="icon-image">
+                </div>
+            </div>
+            <div id="authButtons" class="auth-buttons user-not-logged-in" style="display: none; justify-content: space-between; align-items: center;">
+                <button id="ingresa" class="btn login-btn">Ingresa</button>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div id="cuadricula">
+        </div>
+        <a id="newProduct" href="newProduct.html" class="back-btn" style="top: 120px; display: none;">Agregar producto</a>
+    </main>
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Carrito de compras</h2>
+            <button onclick="toggleCart()">×</button>
+        </div>
+        <div id="cartContent" class="cart-content">
+        </div>
+        <div class="cart-footer">
+            <p id="totalCart"><strong>Total: $0</strong></p>
+            <button id="buyCart">Pagar</button>
+        </div>
+    </div>
+    <div id="historyOverlay" class="cart-overlay" onclick="toggleHistory()"></div>
+    <div id="historySidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Historial de compra</h2>
+            <button onclick="toggleHistory()">×</button>
+        </div>
+        <div id="historyContent" class="cart-content">
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"></div>
+<div id="paymentModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close-btn">&times;</span>
+        <h2>Confirmar compra</h2>
+        <p>Tipsy</p>
+        <p>Cali/Colombia</p>
+        <p>Cliente: #</p>
+        <p>Fecha: #</p>
+        <p>Productos.............. Precio</p>
+        <p id="totalAmount">Total: $0</p>
+        <button id="confirmBuy" class="btn">Confirmar compra</button>
+    </div>
+</div>
+<script src="js/products.js"></script>
+<script>
+    document.getElementById('ingresa').addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+    document.getElementById('logoutBtn2').addEventListener('click', () => {
+        localStorage.removeItem('token');
+        alert('Has cerrado sesión exitosamente');
+        window.location.href = 'login.html';
+    });
+    const menuIcon = document.querySelector('.menu-icon');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    menuIcon.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+    function toggleCart() {
+        const cartSidebar = document.getElementById('cartSidebar');
+        const cartOverlay = document.getElementById('cartOverlay');
+        cartSidebar.classList.toggle('open');
+        cartOverlay.classList.toggle('active');
+    }
+    function toggleHistory() {
+        const historySidebar = document.getElementById('historySidebar');
+        const historyOverlay = document.getElementById('historyOverlay');
+        historySidebar.classList.toggle('open');
+        historyOverlay.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
