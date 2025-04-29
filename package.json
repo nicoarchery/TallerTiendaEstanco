@@ -1,6 +1,6 @@
 {
   "name": "Tipsy",
-  "version": "11.11.23",
+  "version": "1.0.0",
   "description": "Tienda de licores en línea, Tarea JavaScript/HTML/CSS, Computación en Internet I, entrega martes, 29 de abril de 2025, 23:59",
   "main": "backend/app.js",
   "scripts": {

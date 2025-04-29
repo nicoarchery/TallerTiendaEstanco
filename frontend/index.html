@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/cartStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
 </head>
 <body>
 <div class="main">
@@ -18,7 +20,7 @@
             <div class="sidebar" id="sidebar">
                 <h2>Perfil</h2>
                 <div class="profile-section">
-                    <img src="../data/img/user-icon.png" alt="Perfil" class="profile-image">
+                    <span class="material-symbols-outlined " style="font-size:72px;">account_circle</span>
                     <p id="username" class="username">No data found</p><br>
                     <p id="email" class="email">correo</p><br>
                     <br><br>
@@ -26,20 +28,25 @@
                 <button id="logoutBtn2" class="logout-btn">Cerrar sesion</button>
             </div>
             <div class="icon">
-                <h2 class="logo">Tipsy</h2>
+                <h2 class="logo" style="color: #007bff;">Tipsy</h2>
             </div>
-            <div class="search">
-                <input class="srch" type="search" name="srch" placeholder="¿QUE BUSCAS HOY?">
-                <a>
-                    <button class="btn">Search</button>
+            <div class="search" style="display: flex; align-items: center; border-radius: 50px; overflow: hidden; background-color: #f1f1f1; padding: 5px;height: 75px;">
+                <input class="srch" type="search" name="srch" placeholder="¿Que producto buscas?" 
+                    style="border: 2px solid #ccc; border-radius: 25px; padding: 10px 20px; width: 250px; font-size: 16px; outline: none; transition: all 0.3s ease;">
+                
+                <!-- Desplazamos el botón con margen a la derecha -->
+                <a href="#">
+                    <button class="btn" style="background-color: #007bff; color: white; border: none; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; margin-left: 20px;">
+                        <span class="material-symbols-outlined icon-image">search</span>
+                    </button>
                 </a>
             </div>
             <div id="profileCart" class="profile-cart" style="display: none;">
-                <div class="cart-icon" onclick="toggleCart()">
-                    <img src="../data/img/carrito-de-compras.png" alt="Carrito" class="icon-image">
+                <div class="" onclick="toggleCart()" >
+                    <span class="material-symbols-outlined icon-image" style="font-size: 30px;">shopping_cart_checkout</span>
                 </div>
-                <div class="history-icon" onclick="toggleHistory()">
-                    <img src="../data/img/Historial.png" alt="Historial" class="icon-image">
+                <div class="" onclick="toggleHistory()">
+                    <span class="material-symbols-outlined icon-image" style="font-size: 30px;">history</span>
                 </div>
             </div>
             <div id="authButtons" class="auth-buttons user-not-logged-in" style="display: none; justify-content: space-between; align-items: center;">
