@@ -5,5 +5,12 @@
     "email": "mrojas120031@gmail.com",
     "password": "$2a$08$DoR/EB9.iXHBCtNUiQWM8OPCaSAHDdL6WIQBarKhyV8KOE1nYAjLS",
     "rol": "admin"
+  },
+  {
+    "id": 1745894825344,
+    "nombre": "nicolas",
+    "email": "nicojimev@hotmail.com",
+    "password": "$2a$08$KDK6CIbN4c7SBZ1l9ZqG.eGVXqkzUg4Qf0a.CA7.NYHd30MeKc/i.",
+    "rol": "cliente"
   }
 ]

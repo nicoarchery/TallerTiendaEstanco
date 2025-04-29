@@ -26,12 +26,17 @@
                 <button id="logoutBtn2" class="logout-btn">Cerrar sesion</button>
             </div>
             <div class="icon">
-                <h2 class="logo">Tipsy</h2>
+                <h2 class="logo" style="color: #007bff;">Tipsy</h2>
             </div>
-            <div class="search">
-                <input class="srch" type="search" name="srch" placeholder="¿QUE BUSCAS HOY?">
-                <a>
-                    <button class="btn">Search</button>
+            <div class="search" style="display: flex; align-items: center; border-radius: 50px; overflow: hidden; background-color: #f1f1f1; padding: 5px;">
+                <input class="srch" type="search" name="srch" placeholder="¿QUEgggHOY?" 
+                    style="border: 2px solid #ccc; border-radius: 25px; padding: 10px 20px; width: 250px; font-size: 16px; outline: none; transition: all 0.3s ease;">
+                
+                <!-- Desplazamos el botón con margen a la derecha -->
+                <a href="#">
+                    <button class="btn" style="background-color: #007bff; color: white; border: none; border-radius: 25px; padding: 10px 20px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease; margin-left: 20px;">
+                        Search
+                    </button>
                 </a>
             </div>
             <div id="profileCart" class="profile-cart" style="display: none;">
