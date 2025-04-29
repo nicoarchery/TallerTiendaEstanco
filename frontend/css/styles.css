@@ -25,6 +25,20 @@ body {
   color: var(--dark-color);
   line-height: 1.6;
 }
+.logo-tipsy {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-family: 'Cal Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  z-index: 100;
+  background: transparent;
+  pointer-events: none;
+  border: none;
+}
 
 .container {
   position: relative;
@@ -378,4 +392,73 @@ form.sign-in-form {
 .btn.transparent:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
+}
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10; /* Encima del fondo, debajo del contenido */
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -60px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: bubbleUp 6s linear infinite;
+}
+
+.bubble:nth-child(1) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+.bubble:nth-child(2) {
+  left: 30%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 7s;
+  animation-delay: 1s;
+}
+.bubble:nth-child(3) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+.bubble:nth-child(4) {
+  left: 70%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 5.5s;
+  animation-delay: 1.5s;
+}
+.bubble:nth-child(5) {
+  left: 85%;
+  width: 12px;
+  height: 12px;
+  animation-duration: 8s;
+  animation-delay: 0.5s;
+}
+
+@keyframes bubbleUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.2);
+    opacity: 0;
+  }
 }
