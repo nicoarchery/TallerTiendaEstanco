@@ -1,12 +1,5 @@
 [
   {
-    "id": 1745794431770,
-    "nombre": "maroso",
-    "email": "mrojas120031@gmail.com",
-    "password": "$2a$08$DoR/EB9.iXHBCtNUiQWM8OPCaSAHDdL6WIQBarKhyV8KOE1nYAjLS",
-    "rol": "admin"
-  },
-  {
     "id": 1745894825344,
     "nombre": "nicolas",
     "email": "nicojimev@hotmail.com",
@@ -18,13 +11,6 @@
     "nombre": "juan",
     "email": "juanda55667@gmail.com",
     "password": "$2a$08$UtJ/syev6D2H4UJiW4axpuprzbd41D0hZTxEGAN.jFyyUqRJTUxqW",
-    "rol": "cliente"
-  },
-  {
-    "id": 1745900928681,
-    "nombre": "",
-    "email": "",
-    "password": "$2a$08$D6Gz9qgDESFMTw4ecTan.ew9DYCs5i8ksILtnHYZfSXtbZ74/rCT2",
     "rol": "cliente"
   }
 ]
