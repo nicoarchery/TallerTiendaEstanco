@@ -228,7 +228,7 @@ form.sign-in-form {
 
 /* ANIMATION */
 .container.sign-up-mode .signin-signup {
-  transform: translateX(-250%);
+  transform: translateX(-200%);
 }
 
 .container.sign-up-mode form.sign-in-form {
