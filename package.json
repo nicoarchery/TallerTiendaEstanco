@@ -1,12 +1,20 @@
 {
-  "name": "estanco",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "Tipsy",
+  "version": "11.11.23",
+  "description": "Tienda de licores en línea, Tarea JavaScript/HTML/CSS, Computación en Internet I, entrega martes, 29 de abril de 2025, 23:59",
+  "main": "backend/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5"
+  }
 }
