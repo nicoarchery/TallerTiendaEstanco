@@ -406,8 +406,6 @@ form.sign-in-form {
 .btn.transparent:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-<<<<<<< HEAD
-=======
 }
 .bubbles {
   position: absolute;
@@ -477,5 +475,4 @@ form.sign-in-form {
     transform: translateY(-800px) scale(1.2);
     opacity: 0;
   }
->>>>>>> 79e232cd94fbe66a7c47f27c02c4cf2130a6f385
 }
