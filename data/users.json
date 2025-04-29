@@ -12,5 +12,19 @@
     "email": "nicojimev@hotmail.com",
     "password": "$2a$08$KDK6CIbN4c7SBZ1l9ZqG.eGVXqkzUg4Qf0a.CA7.NYHd30MeKc/i.",
     "rol": "cliente"
+  },
+  {
+    "id": 1745900507775,
+    "nombre": "juan",
+    "email": "juanda55667@gmail.com",
+    "password": "$2a$08$UtJ/syev6D2H4UJiW4axpuprzbd41D0hZTxEGAN.jFyyUqRJTUxqW",
+    "rol": "cliente"
+  },
+  {
+    "id": 1745900928681,
+    "nombre": "",
+    "email": "",
+    "password": "$2a$08$D6Gz9qgDESFMTw4ecTan.ew9DYCs5i8ksILtnHYZfSXtbZ74/rCT2",
+    "rol": "cliente"
   }
 ]

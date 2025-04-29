@@ -5,6 +5,86 @@
     "description": "380ml 35% alcohol",
     "price": "30.000",
     "quantity": 20,
-    "image": ""
+    "image": "../data/img/Aguardiente_Blanco.jpeg"
+  },
+  {
+    "id": 1,
+    "name": "Aguardiente Blanco",
+    "description": "380ml 35% alcohol",
+    "price": "30.000",
+    "quantity": 20,
+    "image": "../data/img/Aguardiente_Blanco.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "BACARDI",
+    "description": "750ml 40% alcohol",
+    "price": "45.000",
+    "quantity": 15,
+    "image": "../data/img/BACARDI.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Jack Daniels",
+    "description": "700ml 40% alcohol",
+    "price": "80.000",
+    "quantity": 30,
+    "image": "../data/img/Jack_Daniels.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Johnnie Walker Black",
+    "description": "750ml 40% alcohol",
+    "price": "120.000",
+    "quantity": 10,
+    "image": "../data/img/Johnnie_walker_Black.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "El Jimador",
+    "description": "750ml 35% alcohol",
+    "price": "60.000",
+    "quantity": 25,
+    "image": "../data/img/El_Jimador.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Four Loko Gold",
+    "description": "700ml 12% alcohol",
+    "price": "18.000",
+    "quantity": 50,
+    "image": "../data/img/FOUR-LOKO-GOLD.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Jagermeister",
+    "description": "700ml 35% alcohol",
+    "price": "55.000",
+    "quantity": 40,
+    "image": "../data/img/jager.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Smirnoff",
+    "description": "700ml 37.5% alcohol",
+    "price": "50.000",
+    "quantity": 35,
+    "image": "../data/img/SMIRNOFF.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Patron",
+    "description": "750ml 40% alcohol",
+    "price": "180.000",
+    "quantity": 12,
+    "image": "../data/img/PATRON.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Ron Viejo de Caldas",
+    "description": "750ml 35% alcohol",
+    "price": "20.000",
+    "quantity": 60,
+    "image": "../data/img/Ron_Viejo_de_Caldas.jpeg"
   }
 ]
