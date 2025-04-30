@@ -12,5 +12,12 @@
     "email": "juanda55667@gmail.com",
     "password": "$2a$08$UtJ/syev6D2H4UJiW4axpuprzbd41D0hZTxEGAN.jFyyUqRJTUxqW",
     "rol": "cliente"
+  },
+  {
+    "id": 1745978962502,
+    "nombre": "nicolas",
+    "email": "nicojimev2@hotmail.com",
+    "password": "$2a$08$3vvVQddYrzTJnRwA.sdKFuwvJZ59u34D3c3BQjq7uogUb0a.y4A1S",
+    "rol": "cliente"
   }
 ]

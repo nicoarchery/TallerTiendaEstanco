@@ -1,18 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Aguardiente Doble Anis",
-    "description": "380ml 35% alcohol",
-    "price": "30.000",
-    "quantity": 20,
-    "image": "../data/img/Aguardiente_Blanco.jpeg"
-  },
-  {
-    "id": 1,
     "name": "Aguardiente Blanco",
     "description": "380ml 35% alcohol",
     "price": "30.000",
-    "quantity": 20,
+    "quantity": 50,
     "image": "../data/img/Aguardiente_Blanco.jpeg"
   },
   {
@@ -20,7 +12,7 @@
     "name": "BACARDI",
     "description": "750ml 40% alcohol",
     "price": "45.000",
-    "quantity": 15,
+    "quantity": 17,
     "image": "../data/img/BACARDI.jpeg"
   },
   {
@@ -28,7 +20,7 @@
     "name": "Jack Daniels",
     "description": "700ml 40% alcohol",
     "price": "80.000",
-    "quantity": 30,
+    "quantity": 44,
     "image": "../data/img/Jack_Daniels.jpeg"
   },
   {
@@ -36,7 +28,7 @@
     "name": "Johnnie Walker Black",
     "description": "750ml 40% alcohol",
     "price": "120.000",
-    "quantity": 10,
+    "quantity": 45,
     "image": "../data/img/Johnnie_walker_Black.jpeg"
   },
   {
@@ -44,7 +36,7 @@
     "name": "El Jimador",
     "description": "750ml 35% alcohol",
     "price": "60.000",
-    "quantity": 25,
+    "quantity": 50,
     "image": "../data/img/El_Jimador.jpeg"
   },
   {
@@ -60,7 +52,7 @@
     "name": "Jagermeister",
     "description": "700ml 35% alcohol",
     "price": "55.000",
-    "quantity": 40,
+    "quantity": 36,
     "image": "../data/img/jager.jpeg"
   },
   {
@@ -68,7 +60,7 @@
     "name": "Smirnoff",
     "description": "700ml 37.5% alcohol",
     "price": "50.000",
-    "quantity": 35,
+    "quantity": 48,
     "image": "../data/img/SMIRNOFF.jpeg"
   },
   {
@@ -76,7 +68,7 @@
     "name": "Patron",
     "description": "750ml 40% alcohol",
     "price": "180.000",
-    "quantity": 12,
+    "quantity": 9,
     "image": "../data/img/PATRON.jpeg"
   },
   {
@@ -84,7 +76,7 @@
     "name": "Ron Viejo de Caldas",
     "description": "750ml 35% alcohol",
     "price": "20.000",
-    "quantity": 60,
+    "quantity": 70,
     "image": "../data/img/Ron_Viejo_de_Caldas.jpeg"
   }
 ]

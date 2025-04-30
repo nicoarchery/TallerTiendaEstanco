@@ -190,3 +190,75 @@ exports.createOrEditOrder = async (req, res) => {
         res.status(500).send({ message: "Error interno del servidor" });
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+// Importamos los archivos JSON de productos y órdenes
+const fs = require('fs');
+const path = require('path');
+
+// Leemos los archivos de productos y órdenes
+const ordersFilePath = path.join(__dirname, '../data/orders.json');
+const productsFilePath = path.join(__dirname, '../data/products.json');
+
+const getOrders = () => {
+    const ordersData = fs.readFileSync(ordersFilePath);
+    return JSON.parse(ordersData);
+};
+
+const getProducts = () => {
+    const productsData = fs.readFileSync(productsFilePath);
+    return JSON.parse(productsData);
+};
+
+// Función que devuelve el historial de compras con los productos correspondientes
+const getPurchaseHistory = (req, res) => {
+    const orders = getOrders();
+    const products = getProducts();
+
+    if (!orders || !products) {
+        return res.status(404).send({ message: 'No se encontraron datos de órdenes o productos.' });
+    }
+
+    const purchaseHistory = orders.filter(order => order.sold === true); // Filtramos solo las órdenes vendidas
+
+    const detailedHistory = purchaseHistory.map(order => {
+        const orderDetails = {
+            orderId: order.orderId,
+            date: order.date,
+            products: order.products.map(product => {
+                const productDetails = products.find(p => p.id === product.id);
+                return {
+                    name: productDetails ? productDetails.name : 'Producto no encontrado',
+                    quantity: product.quantity,
+                    price: productDetails ? productDetails.price : 'No disponible'
+                };
+            }),
+            total: calculateTotal(order.products, products) // Calculamos el total de la orden
+        };
+        return orderDetails;
+    });
+
+    res.json(detailedHistory); // Enviamos el historial detallado como respuesta
+};
+
+// Función para calcular el total de la orden
+const calculateTotal = (products, allProducts) => {
+    return products.reduce((total, product) => {
+        const productDetails = allProducts.find(p => p.id === product.id);
+        if (productDetails) {
+            total += parseInt(productDetails.price.replace('.', '').replace(',', '')) * product.quantity;
+        }
+        return total;
+    }, 0);
+};
+
+module.exports = { getPurchaseHistory };

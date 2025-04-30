@@ -82,21 +82,26 @@
             <button onclick="toggleHistory()">×</button>
         </div>
         <div id="historyContent" class="cart-content">
+            <!-- Aquí se cargará el historial de compras -->
         </div>
     </div>
 </div>
-<div class="modal-backdrop" id="modalBackdrop"></div>
-<div id="paymentModal" class="modal">
-    <div class="modal-content">
-        <span id="closeModal" class="close-btn">&times;</span>
-        <h2>Confirmar compra</h2>
+<div class="modal-backdrop" id="modalBackdrop" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999; display: none;"></div>
+    
+<div id="paymentModal" class="modal" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1000; display: none;">
+    <div class="modal-content" style="text-align: center;">
+        <span id="closeModal" class="close-btn" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>
+        <h2>Facturar compra</h2>
         <p>Tipsy</p>
         <p>Cali/Colombia</p>
         <p>Cliente: #</p>
-        <p>Fecha: #</p>
-        <p>Productos.............. Precio</p>
-        <p id="totalAmount">Total: $0</p>
-        <button id="confirmBuy" class="btn">Confirmar compra</button>
+        <p>Fecha: 2025-04-30</p>
+        <p>BACARDI............1 * 45.000</p>
+        <p>Patron.............3 * 180.000</p>
+        <p>-------------------------</p>
+        <p><strong>Total: $585</strong></p>
+        <!-- Botón con color azul -->
+        <button id="confirmBuy" class="btn" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Ok</button>
     </div>
 </div>
 <script src="js/products.js"></script>

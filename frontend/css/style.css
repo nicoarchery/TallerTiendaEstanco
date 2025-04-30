@@ -253,7 +253,7 @@
     width: 40px; /* Tamaño del botón más pequeño */
     height: 40px; /* Tamaño del botón más pequeño */
     border-radius: 50%; /* Hacer el botón circular */
-    background-color: #28a745; /* Color verde (para carrito de compras) */
+    background-color: #007bff; /* Color verde (para carrito de compras) */
     color: white; /* Color blanco para el texto */
     font-size: 24px; /* Tamaño del texto (+) ajustado para que se vea bien en el botón pequeño */
     display: flex; /* Centrar el texto dentro del botón */
@@ -268,11 +268,11 @@
 }
 
 .add-to-cart-btn:hover {
-    background-color: #218838; /* Color verde más oscuro cuando el mouse está sobre el botón */
+    background-color: #007bff; /* Color verde más oscuro cuando el mouse está sobre el botón */
 }
 
 .add-to-cart-btn:active {
-    background-color: #1e7e34; /* Color verde más oscuro cuando el botón es presionado */
+    background-color: #007bff; /* Color verde más oscuro cuando el botón es presionado */
 }
 
 
@@ -728,7 +728,7 @@ form input[type="file"] {
 
 /* Estilo del botón de guardar cambios */
 form button {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -739,7 +739,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #007bff;
 }
 
 form button:focus {
@@ -749,7 +749,7 @@ form button:focus {
 /* Estilo en estado de enfoque de los inputs y textarea */
 form input:focus,
 form textarea:focus {
-    border-color: #4CAF50;
+    border-color: #007bff;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
@@ -834,7 +834,7 @@ textarea[readonly] {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -861,7 +861,7 @@ textarea[readonly] {
 }
 
 .edit-btn:hover {
-    background-color: #45a049;
+    background-color: #007bff;
 }
 
 .edit-btn:focus {
@@ -870,7 +870,7 @@ textarea[readonly] {
 
 /* Botón de guardar cambios */
 form button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -881,7 +881,7 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #007bff;
 }
 
 form button[type="submit"]:focus {
@@ -968,7 +968,7 @@ input[type="file"] {
 
 .btn {
     padding: 10px 15px;
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
@@ -976,7 +976,7 @@ input[type="file"] {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #007bff;
 }
 
 
@@ -1031,7 +1031,7 @@ input[type="file"] {
     animation: fadeIn 0.5s ease, fadeOut 0.5s ease 4.5s forwards;
 }
 .notification.success {
-    border-left: 5px solid #28a745;
+    border-left: 5px solid #007bff;
 }
 .notification.error {
     border-left: 5px solid #dc3545;
